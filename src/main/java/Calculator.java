@@ -10,7 +10,7 @@ public class Calculator {
 
     public BinaryOperator<Integer> multiply = (x, y) -> x * y;
 
-    public BinaryOperator<Integer> devide = (x, y) -> x / y;
+    public BinaryOperator<Integer> devide = (x, y) -> y == 0 ? 0 : x / y;
 
     public UnaryOperator<Integer> pow = x -> x * x;
 
